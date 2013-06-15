@@ -1,23 +1,17 @@
 
-package trabalhojogo;
+package trabalhoJogo;
 
 /**
  * @author Thamires Mari
  */
-public abstract class Personagem extends Arma{
+public abstract class Personagem{
    
     private String nome;
     private int experiencia;
+    private Poder poder;
+    private Arma arma;
     
-    public Personagem(){
-        
-    }
-    
-    public Personagem(String descricao, int valor, int quantidade,  int valorp, String descricaop, String nome, int experiencia){
-        super(descricao, valor, quantidade, valorp, descricaop);
-        this.nome = nome;
-        this.experiencia = experiencia;     
-    }
+    public Personagem(){}
 
     public String getNome() {
         return nome;
@@ -43,5 +37,21 @@ public abstract class Personagem extends Arma{
                 "Experiencia=" + this.getExperiencia() + '\n';
     }
     
-    public abstract int CalcularPontos();        
+    public abstract int calcularPontos();
+
+	public Poder getPoder() {
+		return poder;
+	}
+
+	public void setPoder(Poder poder) {
+		this.poder = poder;
+	}
+
+	public Arma getArma() {
+		return arma;
+	}
+
+	public void setArma(Arma arma) {
+		this.arma = arma;
+	}        
 }
