@@ -1,5 +1,5 @@
 
-package trabalhojogo;
+package trabalhoJogo;
 
 /**
  * @author Thamires Mari
@@ -12,13 +12,6 @@ public class Arma extends Poder{
     
     public Arma(){
         
-    }
-    
-    public Arma(String descricao, int valor, int quantidade,  int valorp, String descricaop){
-        super(valorp, descricaop);
-        this.descricao = descricao;
-        this.valor = valor;
-        this.quantidade = quantidade;
     }
 
     public String getDescricao() {

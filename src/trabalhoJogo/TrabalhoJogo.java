@@ -1,4 +1,4 @@
-package trabalhojogo;
+package trabalhoJogo;
 /**
  * @author Thamires Mari
  */
